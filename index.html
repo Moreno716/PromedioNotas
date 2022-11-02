@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Estudiantes</title>
+</head>
+<body id="body">
+    <br><br>
+    <hr>
+    <div class="spaceData">
+        <h2 id="textIn">INGRESA LOS DATOS</h2>
+            <div class="dates">
+                <input type="text" id="name" placeholder="Name..." >
+                <br><br>
+                <input type="text" id="note1" placeholder="Nota 1..." min="1" max="5">
+                <br><br>
+                <input type="text" id="note2" placeholder="Nota 2..." min="1" max="5">
+                <br><br>
+                
+                <input type="button" value="Calcular" onclick="calculate()">
+                <br><br>
+                <div id="result"></div>
+                <br>
+            </div>
+
+            <select name="fondo" id="bottom" onchange="changeBack(this)" class="option">
+                <option value="">Ligth</option>
+                <option value="#332F2E">Dark</option>
+            </select>
+            <br>
+    </div>
+    <div class="buttonsOptions">
+        <input type="button" value="Cuadro de honor" onclick="honor()" id="honor">
+        <input type="button" value="Ganar la materia" onclick="win()" id="win">
+        <input type="button" value="Poder recuperar" onclick="recuperar()" id="recuperar">
+        <input type="button" value="Pierde la materia" onclick="lose()" id="lose">
+    </div>
+    <br><br>
+    <div id="textTwo"></div>
+    <hr>
+
+    <br><br>
+
+
+    <script src="js/principal.js"></script>
+</body>
+</html>
